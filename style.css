@@ -1,0 +1,263 @@
+.nex .N {
+  transform: scale(1) rotate(0);
+  transition: 0.5s;
+}
+
+.N:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.navbar a img {
+  height: 50px;
+  width: 80px;
+}
+
+.jumbotron {
+  /* padding: 2rem 1rem; */
+  background-color: rgb(0, 35, 73);
+  padding-top: 7rem;
+  margin-top: -40px;
+}
+
+.jumbotron img {
+  height: 780px;
+}
+
+.about-me p {
+  text-align: justify;
+}
+
+#projects {
+  background-color: #f29d9d;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(219, 217, 89);
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+}
+
+/* My Icon */
+.icon-box {
+  position: relative;
+  background-color: #dc2a2a;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.icon-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 40px;
+  left: -5%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.icon-box:hover::before {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.icon-box::after {
+  content: "ICON";
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 10px;
+  top: 350px;
+  left: 45%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.icon-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.icon-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 10px;
+  transform: translate3d(0, 0, 50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.icon-box:hover .icon-name {
+  top: 40px;
+  opacity: 1;
+}
+
+.btn-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.icon-box:hover .btn-icon {
+  bottom: 20px;
+  opacity: 0.8;
+}
+
+.icon-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -45%, 80px);
+  max-width: 450px;
+  transition: 0.5s;
+}
+
+.icon-box:hover .icon-img {
+  transform: translate3d(-50%, -47%, 80px) scale(1.1);
+}
+
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #34974d;
+  background-color: #3aa856; */
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}
+
+/* Format Judul per Film */
+.card-text {
+  font-weight: bold;
+  font-size: 17px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  border: #808080 solid 4px;
+}
+
+#movie {
+  background: #FFFFF0;
+  padding-bottom: 70px;
+}
+
+#cart {
+  background: white;
+  border-top: 6px solid black;
+}
+/* tambahan hendra V */
+#cart-container button {
+  background-color: #808080;
+  border-radius: 12px;
+  border-color: black;
+  color: white;
+  font-size: 18px;
+}
+#cart-container {
+  font-family: monospace;
+  margin: 80px;
+}
+/* edit disini untuk tombol edit sama container cart */
+/* cart container button sama cart container */
+
+.cart-item {
+  background: #FFFFF0;
+  border: #957C3D solid 4px;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  font-size: 18px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-img-top {
+  height: 610px; /* Ubah nilai ini sesuai kebutuhan Anda */
+  object-fit: cover;
+}
+
+.figure-captionX {
+  font-style: italic;
+  font-size: larger;
+}

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Indo ZZ1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+ 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" data-bs-theme="dark" style="background-color: rgb(0, 35, 73) !important">
+      <div class="container">
+        <a class="navbar-brand nex" href="#"> <img src="img/logo.png" alt="Logo" class="N" width="50" height="50" class="d-inline-block align-text-center img-fluid" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#movie">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cart">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#aboutModal" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- About Us Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModalLabel">About Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <br>
+        <!-- Add your content here -->        
+        <p>Selamat datang di Indo ZZ1, tempat di mana keajaiban film menjadi nyata. Berdiri sejak tahun 1905, Indo ZZ1 telah menjadi bagian terdepan industri hiburan, menyediakan pengalaman sinematik yang tak terlupakan bagi para pecinta film lokal maupun mancanegara. Berangkat dengan slogan andalannya CRUD(Caring, Respectful, Understanding, dan Diligent) kami terus konsisten menjadi penyedia film sinema nomor 1 di Asia Tenggara. </p>
+        <br>
+        <div class="text-center">
+          <img src="Bioskop.jpg" alt="Arsip Nasional_Leiden Archive" class="img-fluid">
+          <figcaption class="figure-captionX">Potret bioskop IndoZZ1 saat pertama kali berdiri(1905) </figcaption>
+        </div>
+        <br>
+        <p>Perjalanan kami dimulai dengan visi untuk menciptakan ruang di mana orang dapat melarikan diri dari kenyataan dan tenggelam dalam dunia film. Selama bertahun-tahun, kami telah tumbuh dan berkembang, beradaptasi dengan perubahan lanskap industri perfilman.</p>
+        
+        <p>Para kontributor utama kami, seperti sutradara terkenal Bayu S.W. dan bintang film ternama Hendraahai dan Andry A., telah memberikan warna dan keahlian mereka untuk membawa pengalaman film yang unik dan inspiratif kepada penonton kami. Kolaborasi mereka dengan tim kreatif kami telah menghasilkan karya-karya epik yang telah mendapatkan pengakuan di kancah internasional.</p>
+        
+        <p>Visi kami untuk masa depan adalah terus berinovasi dan menyajikan pengalaman sinematik yang lebih baik. Kami berkomitmen untuk menghadirkan film-film berkualitas tinggi dari berbagai genre, memperluas jangkauan film-film internasional, dan memberikan platform bagi para sineas lokal untuk mengungkapkan bakat mereka.</p>
+        
+        <p>Kami juga berusaha terus meningkatkan fasilitas kami dengan teknologi terbaru, termasuk sistem audio Dolby Atmos dan proyektor state-of-the-art, sehingga penonton kami dapat merasakan pengalaman yang mendalam dan mengharukan dalam menikmati film.</p>
+        
+        <p>Terima kasih atas dukungan dan kesetiaan Anda. Kami berharap dapat terus memanjakan Anda dengan film-film yang tak terlupakan dan menjadi bagian dari perjalanan sinematik yang menakjubkan di Indo ZZ1.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End About Us Modal -->
+
+    <!-- tron -->
+    <section class="jumbotron">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/m1.jpg" class="d-block w-100" />
+            <div class="carousel-caption">
+              <h5 style="font-style: italic; font-size: larger;">Spider-Man: Into the Spider-Verse</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/m2.jpg" class="d-block w-100" />
+            <div class="carousel-caption">
+              <h5 style="font-style: italic; font-size: larger;">The Incredibles</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/m3.jpg" class="d-block w-100" />
+            <div class="carousel-caption">
+              <h5 style="font-style: italic; font-size: larger;">Black Panther</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/m4.png" class="d-block w-100" />
+            <div class="carousel-caption">
+              <h5 style="font-style: italic; font-size: larger;">Avengers: Endgame</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/m5.jpg" class="d-block w-100" />
+            <div class="carousel-caption">
+              <h5 style="font-style: italic; font-size: larger;" >Logan</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- start card -->
+    <section id="movie">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2
+            data-aos="zoom-out-down"
+            data-aos-offset="250"
+            data-aos-duration="500">NOW SHOWING</h2>
+          </div>
+        </div>
+        <div class="row text-center justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-offset="250">
+              <img src="1.jpg" class="card-img-top" alt="Projects" />
+              <div class="card-body">
+                <p class="card-text" id="p-mov1">SPIDER-MAN: INTO THE SPIDER-VERSE</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">More...</button>
+              </div>
+            </div>
+          </div>
+          <!-- Add modal for card 1 -->
+          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal1Label">Spider-Man: Into the Spider-Verse - 9.5 / 10</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Place your ticket reservation form here -->
+                  <p><strong>8+ (ALL AGES)</strong></p>
+                  <figure class="figure">
+                    <img src="1.jpg" class="figure-img img-fluid rounded" alt="img broken">
+                    <figcaption class="figure-caption">
+                      <p><strong>Movie Title:</strong> Spider-Man: Into the Spider-Verse</p>
+                      <p><strong>Sinopsis:</strong> Film animasi yang mengikuti petualangan remaja bernama Miles Morales ketika dia menemukan kekuatan baru yang memungkinkannya menjadi Spider-Man. Ketika sekelompok penjahat dari dimensi alternatif mengancam kota, Miles harus bergabung dengan Spider-Man dari dimensi lain untuk menghentikan ancaman tersebut dan menyelamatkan dunia.</p>
+                      <p><strong>Sutradara:</strong> Bob Persichetti, Peter Ramsey, Rodney Rothman</p>
+                      <p><strong>Aktor:</strong> Shameik Moore, Jake Johnson, Hailee Steinfeld, Mahershala Ali, Brian Tyree Henry, Lily Tomlin, Luna Lauren Velez, John Mulaney, Kimiko Glenn, Nicolas Cage</p>
+                      <p><strong>Rilis:</strong> 14 Desember 2018</p>
+                    </figcaption>
+                  </figure>              
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">
+                    <a class="nav-link" href="#cart">Buy Ticket(s)</a>
+                  </button>                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End modal for card 1 -->           
+          <div class="col-md-4 mb-3" 
+          data-aos="flip-left" data-aos-delay="150" data-aos-offset="250">
+            <div class="card">
+              <img src="2.jpg" class="card-img-top" alt="Projects" />
+              <div class="card-body">
+                <p class="card-text" id="p-mov2">THE INCREDIBLES</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">More...</button>
+              </div>
+            </div>
+          </div>
+          <!-- Add modal for card 2 -->
+          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal2Label">The Incredibles - 9.9 / 10</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Place your ticket reservation form here -->
+                  <p><strong>3+ (ALL AGES)</strong></p>
+                    <figure class="figure">
+                      <img src="2.jpg" class="figure-img img-fluid rounded" alt="img broken">
+                      <figcaption class="figure-caption">
+                        <p><strong>Movie Title:</strong> The Incredibles</p>
+                        <p><strong>Sinopsis:</strong> Film animasi bergenre superhero yang mengisahkan keluarga Parr, yang terdiri dari Bob Parr (Mr. Incredible), Helen Parr (Elastigirl), dan anak-anak mereka Violet, Dash, dan Jack-Jack. Keluarga ini memiliki kekuatan super dan berusaha untuk menjalani kehidupan normal, tetapi mereka terlibat dalam pertempuran melawan penjahat super jahat bernama Syndrome.</p>
+                        <p><strong>Sutradara:</strong> Brad Bird</p>
+                        <p><strong>Aktor:</strong> Craig T. Nelson, Holly Hunter, Samuel L. Jackson</p>
+                        <p><strong>Rilis:</strong> November 2004</p>
+                      </figcaption>
+                    </figure>                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">
+                    <a class="nav-link" href="#cart">Buy Ticket(s)</a>
+                  </button>   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End modal for card 2 -->                
+          <div class="col-md-4 mb-3">
+            <div class="card" 
+            data-aos="flip-left" data-aos-delay="350" data-aos-offset="250">
+              <img src="3.jpg" class="card-img-top" alt="Projects" />
+              <div class="card-body">
+                <p class="card-text" id="p-mov3">BLACK PANTHER</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">More...</button>
+              </div>
+            </div>
+          </div>
+          <!-- Add modal for card 3 -->
+          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal3Label">Black Panther - 8.5 / 10</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Place your ticket reservation form here -->
+                  <p><strong>18+ (TEENAGER & ADULT)</strong></p>
+                  <figure class="figure">
+                    <img src="3.jpg" class="figure-img img-fluid rounded" alt="img broken">
+                    <figcaption class="figure-caption">
+                      <p><strong>Movie Title:</strong> Black Panther</p>
+                      <p><strong>Sinopsis:</strong> Black Panther adalah film superhero yang mengikuti kisah T'Challa, pangeran Wakanda yang menjadi raja setelah ayahnya meninggal. Dia harus menghadapi tantangan dari dalam dan luar negara yang mengancam kedaulatan Wakanda dan nasibnya sebagai Black Panther.</p>
+                      <p><strong>Sutradara:</strong> Ryan Coogler</p>
+                      <p><strong>Aktor:</strong> Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman</p>
+                      <p><strong>Rilis:</strong> Februari 2018</p>
+                    </figcaption>
+                  </figure> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">
+                    <a class="nav-link" href="#cart">Buy Ticket(s)</a>
+                  </button>   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End modal for card 3 -->              
+          <div class="col-md-4 mb-3" 
+          data-aos="flip-left" data-aos-delay="450" data-aos-offset="250">
+            <div class="card">
+              <img src="4.jpg" class="card-img-top" alt="Projects" />
+              <div class="card-body">
+                <p class="card-text" id="p-mov4">SPIDER-MAN: ACROSS THE SPIDER-VERSE</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">More...</button>
+              </div>
+            </div>
+          </div>
+          <!-- Add modal for card 4 -->
+          <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal4Label">Spider-Man: Across the Spider-Verse - 8.8 / 10</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Place your ticket reservation form here -->
+                  <p><strong>15+ (TEENAGER AND ADULT)</strong></p>
+                  <figure class="figure">
+                    <img src="4.jpg" class="figure-img img-fluid rounded" alt="img broken">
+                    <figcaption class="figure-caption">
+                      <p><strong>Movie Title:</strong> Spider-Man: Across the Spider-Verse</p>
+                      <p><strong>Sinopsis:</strong> Spider-Man: Across the Spider-Verse adalah film animasi yang melanjutkan kisah petualangan Miles Morales sebagai Spider-Man dalam dimensi paralel. Setelah peristiwa dari film sebelumnya, Miles Morales menemukan dirinya bertemu dengan Gwen Stacy dari dimensi lain, yang juga menjadi Spider-Woman. Bersama-sama, mereka terlibat dalam petualangan melintasi berbagai dimensi, menghadapi musuh baru, dan menjelajahi konsep realitas alternatif.</p>
+                      <p><strong>Sutradara:</strong> Joaquim Dos Santos</p>
+                      <p><strong>Aktor:</strong> Shameik Moore (suara Miles Morales/Spider-Man), Hailee Steinfeld (suara Gwen Stacy/Spider-Woman)</p>
+                      <p><strong>Rilis:</strong> 7 Oktober 2023</p>
+                    </figcaption>
+                  </figure> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">
+                    <a class="nav-link" href="#cart">Buy Ticket(s)</a>
+                  </button>   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End modal for card 4 -->             
+          <div class="col-md-4 mb-3">
+            <div class="card" 
+            data-aos="flip-left" data-aos-delay="550" data-aos-offset="250">
+              <img src="5.jpg" class="card-img-top" alt="Projects" />
+              <div class="card-body">
+                <p class="card-text" id="p-mov5">AVENGERS: ENDGAME</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">More...</button>
+              </div>
+            </div>
+          </div>
+          <!-- Add modal for card 5 -->
+          <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal5Label">Avengers: Endgame - 9.2 / 10</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Place your ticket reservation form here -->
+                  <p><strong>18+ (ADULT)</strong></p>
+                  <figure class="figure">
+                    <img src="img/film5.jpg" class="figure-img img-fluid rounded" alt="img broken">
+                    <figcaption class="figure-caption">
+                      <p><strong>Movie Title:</strong> Avengers: Endgame</p>
+                      <p><strong>Sinopsis:</strong> Avengers: Endgame adalah film superhero yang mengikuti kelanjutan cerita dari Avengers: Infinity War. Setelah kehancuran yang disebabkan oleh Thanos, para Avengers yang tersisa bersatu kembali untuk melawan Thanos dan memulihkan kerusakan yang terjadi. Mereka melakukan perjalanan waktu ke masa lalu untuk mengumpulkan Infinity Stones dan mengembalikan semua yang hilang.</p>
+                      <p><strong>Sutradara:</strong> Anthony Russo, Joe Russo</p>
+                      <p><strong>Aktor:</strong> Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner</p>
+                      <p><strong>Rilis:</strong> 26 April 2019</p>
+                    </figcaption>
+                  </figure>    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">
+                    <a class="nav-link" href="#cart">Buy Ticket(s)</a>
+                  </button>   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End modal for card 5 -->             
+          <div class="col-md-4 mb-3">
+            <div class="card" 
+            data-aos="flip-left" data-aos-delay="550" data-aos-offset="250">
+              <img src="6.jpg" class="card-img-top" alt="Projects" />
+              <div class="card-body">
+                <p class="card-text" id="p-mov6">LOGAN</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">More...</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- Add modal for card 6 -->
+          <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal6Label">Logan - 8.4 / 10</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Place your ticket reservation form here -->
+                  <p><strong>20+ (ADULT)</strong></p>
+                  <figure class="figure">
+                    <img src="img/film6.jpg" class="figure-img img-fluid rounded" alt="img broken">
+                    <figcaption class="figure-caption">
+                      <p><strong>Judul Film:</strong> Logan</p>
+                      <p><strong>Sinopsis:</strong> Logan adalah sebuah film superhero yang mengisahkan petualangan terakhir Wolverine, seorang mutant dengan kemampuan penyembuhan yang lambat dan cakar adamantium. Set di masa depan, Logan hidup dalam kesepian dan kekecewaan. Namun, ketika seorang wanita misterius meminta bantuan Logan untuk melindungi seorang anak mutant dari kejaran organisasi jahat, Logan terpaksa menghadapi masa lalunya dan mengambil peran sebagai pahlawan sekali lagi.</p>
+                      <p><strong>Sutradara:</strong> James Mangold</p>
+                      <p><strong>Aktor:</strong> Hugh Jackman, Patrick Stewart, Dafne Keen</p>
+                      <p><strong>Rilis:</strong> Maret 2017</p>
+                    </figcaption>
+                  </figure>    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">
+                    <a class="nav-link" href="#cart">Buy Ticket(s)</a>
+                  </button>   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End modal for card 6 -->           
+    </section>
+    <!-- end card -->
+    <section id="cart">
+      <div class="container">
+      <h2 style="font-family: Arial, Helvetica, sans-serif;">Form Pemesanan Tiket</h2>
+      <form>
+        <div class="mb-3">
+          <label for="ticketInput" class="form-label">Film Yang Sedang Tayang</label>
+          <select id="movie-input" class="form-select" aria-label="Default select example">
+          
+            <option value="SPIDER-MAN: INTO THE SPIDER-VERSE">SPIDER-MAN: INTO THE SPIDER-VERSE</option>
+            <option value="THE INCREDIBLES">THE INCREDIBLES</option>
+            <option value="BLACK PANTHER">BLACK PANTHER</option>
+            <option value="SPIDER-MAN: ACROSS THE SPIDER-VERSE">SPIDER-MAN: ACROSS THE SPIDER-VERSE</option>
+            <option value="AVENGERS: ENDGAME">AVENGERS: ENDGAME</option>
+            <option value="LOGAN">LOGAN</option>
+          </select>
+          
+        </div>
+        <div class="mb-3">
+          <label for="ticketInput" class="form-label">Jumlah Tiket</label>
+          <input  type="number" class="form-control" id="ticketInput" placeholder="Masukkan jumlah tiket" min="1">
+        </div>
+        <div class="mb-3">
+          <label  for="scheduleInput" class="form-label">Jadwal</label>
+          <select id="schedule-input" class="form-select" aria-label="Default select example">
+            
+            <option value="09.00">09.00</option>
+            <option value="12.00">12.00</option>
+            <option value="15.00">15.00</option>
+            <option value="17.00">17.00</option>
+            <option value="19.00">19.00</option>
+            <option value="21.00">21.00</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="priceInput" class="form-label">Total Harga</label>
+          <h2 id="total">Rp 0</h2>
+        </div>
+        
+        <button id="btnInput" type="submit" class="btn btn-primary">Add to Cart</button>
+        <button id="btnReset" type="submit" class="btn btn-danger">Reset Cart</button>
+      </form>
+      </div>
+      <br>
+      <div id="cart-container"></div>
+    </section>
+    <!-- footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#002349"
+        fill-opacity="1"
+        d="M0,224L60,213.3C120,203,240,181,360,181.3C480,181,600,203,720,218.7C840,235,960,245,1080,229.3C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+    <footer class="bg-primary text-white text-center pb-1" style="background-color: rgb(0, 35, 73) !important">
+      <p><a href="https://www.instagram.com/?hl=id" class="text-white fw-semibold text-decoration-none">IndoZZ1</a> | &copyCopyright 2023.</p>
+    </footer>
+    <!-- end footer -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+   
+      const galleryImage = document.querySelectorAll(".gallery-img");
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosOffset = 250;
+      });
+
+      AOS.init();
+    </script>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 3, delay: 1.5, text: "Web Developer | AK3U | Auditor SMK3" });
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, ease: "elastic", delay: 0.5 });
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".icon-box"), {
+        max: 50,
+        speed: 1000,
+      });
+      
+
+      
+    </script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const buyTicketButtons = document.querySelectorAll('.modal-footer .btn.btn-primary');
+    
+        buyTicketButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            const modal = button.closest('.modal.fade');
+            const cartSection = document.querySelector('#cart');
+    
+            modal.addEventListener('hidden.bs.modal', function() {
+              setTimeout(function() {
+                cartSection.scrollIntoView();
+                document.body.click();
+              }, 0);
+            });
+    
+            setTimeout(function() {
+              const closeButton = modal.querySelector('.btn-close');
+              closeButton.click();
+            }, 1000);
+          });
+        });
+      });
+    </script> 
+    
+
+   <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
